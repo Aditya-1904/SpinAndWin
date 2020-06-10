@@ -1,0 +1,215 @@
+*{
+	    font-family: "Comic Sans MS";
+}
+body {
+ margin: 0;
+ padding: 0;
+ position: relative;
+background: #00fdff url(assets/521.jpg);
+height: 100vh;
+background-size: cover;
+background-position:0 0 ;
+
+
+}
+.main{
+  margin: 0;
+  padding: 0;
+  position: relative;
+ background: #00fdff url(assets/521.jpg);
+ height: 100vh;
+ background-size: cover;
+ top: 00px;
+ background-position:0 0 ;
+ background-repeat: repeat-x;
+ animation: animate 10s linear infinite;
+}
+
+
+@keyframes animate{
+  from{
+    background-position: 0 0;
+  }
+  to{
+    background-position: 100% 0;
+  }
+}
+
+.copy-container h1{
+  font-size: 80px;
+  text-align: center;
+  color: red;
+
+ transition: linear;
+}
+
+.copy-container span{
+  font-size: 80px;
+  text-align: center;
+  color: rgb(216, 176, 176);
+
+ transition: linear;
+}
+.btn1{
+  font-size: large;
+  color: #fff;
+  background:linear-gradient(to right ,rgb(139, 23, 23),rgb(62, 171, 214));
+  margin-left: 570px;
+  width: 200px;
+  height: 60px;
+
+  
+
+}
+.btn1:hover{
+  color: #fff;
+  background:linear-gradient(to right ,rgb(62, 171, 214),rgb(139, 23, 23));
+  transition: 10s;
+  cursor: pointer;
+}
+
+.main2 img{
+  height: 100px;
+  width: 100px;
+
+  margin-left: 620px;
+  animation: spin 50s infinite;
+}
+
+.arrow {
+  transform: rotate(90deg);
+  width: 0px;
+  position: absolute;
+  top: 90px;
+}
+
+#spin-btn {
+  background: transparent;
+}
+
+.float {
+  animation: float 1s infinite;
+}
+
+.col {
+  width: 50%;
+}
+
+.spin-btn {
+  height: 150px;
+  margin-bottom: 250px;
+
+}
+
+#spinner {
+  height: 500px;
+  position: relative;
+  
+  z-index: 0;
+  top: 0px;
+ 
+}
+
+.pin {
+  height: 100px;
+
+}
+
+
+
+.spin {
+  animation: spin 11s infinite;
+}
+
+.pop-up-content {
+  color: rgb(255, 0, 0);
+  background: rgba(255, 255, 255, 0.418);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: 5%;
+  font-family: "Comic Sans MS";
+  display: none;
+  border: solid 5px red;
+  animation: enlarge 1s linear infinite;
+}
+
+.instruct {
+  color: rgb(255, 0, 0);
+  font-weight: bolder;
+  border: solid 5px red;
+  background: rgba(255, 255, 255, 0.418);
+  padding: 0.5rem;
+  animation: enlarge 1s infinite;
+
+}
+
+.pop-up-content h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.pop-up-para {
+  text-align: center;
+  font-size: 4rem;
+  
+ 
+}
+
+.wheel-stand {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  height: 120px;
+
+  transform: rotate(180deg);
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(3600deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    top: 70px;
+  }
+  50% {
+    top: 90px;
+  }
+  100% {
+    top: 70px;
+  }
+}
+
+
+@keyframes enlarge {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
